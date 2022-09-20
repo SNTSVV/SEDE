@@ -1,0 +1,59 @@
+Blender 2.81 (sub 16) (hash 26bd5ebd42e3 built 2019-11-20 16:46:44)
+Read prefs: /Users/hazem.fahmy/Library/Application Support/Blender/2.81/config/userpref.blend
+found bundled python: /Applications/Blender.app/Contents/Resources/2.81/python
+Read blend: /Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/59.blend
+Loading MHX2 importer-runtime v 0.30
+Loading MHX2 armature
+build loaded
+MHX2 armature loaded
+shaders.py
+MHX2 successfully (re)loaded
+mb_lab updater verbose is enabled
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_install_popup'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_install_popup'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_check_now'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_check_now'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_update_now'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_update_now'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_update_target'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_update_target'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_install_manually'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_install_manually'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_updated_successful'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_updated_successful'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_restore_backup'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_restore_backup'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_ignore'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_ignore'>
+cls BA: <class 'MB-Lab.addon_updater_ops.addon_updater_end_background'>
+cls: <class 'MB-Lab.addon_updater_ops.addon_updater_end_background'>
+mb_lab Updater: Read in json settings from file
+['/Applications/Blender.app/Contents/Resources/2.81/scripts/startup', './', '/Applications/Blender.app/Contents/Resources/2.81/scripts/modules', '/Applications/Blender.app/Contents/Resources/2.81/python/lib/python37.zip', '/Applications/Blender.app/Contents/Resources/2.81/python/lib/python3.7', '/Applications/Blender.app/Contents/Resources/2.81/python/lib/python3.7/lib-dynload', '/Applications/Blender.app/Contents/Resources/2.81/python/lib/python3.7/site-packages', '/Users/hazem.fahmy/Documents/GitHub/funtasy-simulatorbasedexplanations/IEE_V2/mblab-interface/src', '/Applications/Blender.app/Contents/Resources/2.81/scripts/freestyle/modules', '/Applications/Blender.app/Contents/Resources/2.81/scripts/addons/modules', '/Users/hazem.fahmy/Library/Application Support/Blender/2.81/scripts/addons/modules', '/Applications/Blender.app/Contents/Resources/2.81/scripts/addons', '/Users/hazem.fahmy/Library/Application Support/Blender/2.81/scripts/addons', '/Applications/Blender.app/Contents/Resources/2.81/scripts/addons_contrib', PosixPath('/Users/hazem.fahmy/Documents/GitHub/funtasy-simulatorbasedexplanations')]
+model_folder is set to  /Users/hazem.fahmy/Documents/HPD/TR/Pool/ in config_iee.py file, please change to the output path needed accordingly
+Generating an image 0.352_28.66_-48.5_0.738_0.499_0.872_0.379_-5.67_16.56_0.860_-0.87_0.649_-0.08_0.190_0.969_0.967_0.963_0.460_0.386_0.435_0.110_1.374_0.924
+looking for model in /Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785
+model label files [['/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/59.blend', '/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/landmarks.npy']]
+getting .csv in  ./IEEPackage/pose
+Model Lab Files [['/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/59.blend', '/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/landmarks.npy']]
+Pose Files ['./IEEPackage/pose/Aga.csv', './IEEPackage/pose/Tsl.csv', './IEEPackage/pose/Mbg.csv', './IEEPackage/pose/Fga.csv', './IEEPackage/pose/Ror.csv', './IEEPackage/pose/Dho.csv', './IEEPackage/pose/Gle.csv', './IEEPackage/pose/Ldh.csv', './IEEPackage/pose/Pbo.csv', './IEEPackage/pose/Acq.csv', './IEEPackage/pose/Acr.csv', './IEEPackage/pose/Vse.csv', './IEEPackage/pose/Hcl.csv', './IEEPackage/pose/Sol.csv']
+-- number of poses: 14--
+----- Simulating 1 models.
+('./IEEPackage/pose/Aga.csv', '/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/59.blend', '/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/landmarks.npy', 1, 376, 240, '/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/0.352_28.66_-48.5_0.738_0.499_0.872_0.379_-5.67_16.56_0.860_-0.87_0.649_-0.08_0.190_0.969_0.967_0.963_0.460_0.386_0.435_0.110_1.374_0.924', None, 1)
+pose file ./IEEPackage/pose/Aga.csv
+model file /Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/59.blend
+label file /Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/59/landmarks.npy
+###### ---- USING SUBSAMPLING 0: 1
+imgPath /Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/0.352_28.66_-48.5_0.738_0.499_0.872_0.379_-5.67_16.56_0.860_-0.87_0.649_-0.08_0.190_0.969_0.967_0.963_0.460_0.386_0.435_0.110_1.374_0.924
+###### ---- USING SUBSAMPLING: 1
+pose_data:  (1796, 4)
+getting .csv in  /Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785
+target None
+[0.738, 0.499, 0.872, 0.379, -5.67, 16.56, 0.86, -0.87, 0.649, -0.08, 0.19]
+target [0, 0, 0.19]
+/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/0.352_28.66_-48.5_0.738_0.499_0.872_0.379_-5.67_16.56_0.860_-0.87_0.649_-0.08_0.190_0.969_0.967_0.963_0.460_0.386_0.435_0.110_1.374_0.924.png
+/Users/hazem.fahmy/Documents/HPD/TR/Pool/67324785/0.352_28.66_-48.5_0.738_0.499_0.872_0.379_-5.67_16.56_0.860_-0.87_0.649_-0.08_0.190_0.969_0.967_0.963_0.460_0.386_0.435_0.110_1.374_0.924.npy
+generate img: --- 0.352_28.66_-48.5_0.738_0.499_0.872_0.379_-5.67_16.56_0.860_-0.87_0.649_-0.08_0.190_0.969_0.967_0.963_0.460_0.386_0.435_0.110_1.374_0.924 ---
+Closing blender
+[0.352, 28.66, -48.5] MiddleRight
+
+Blender quit
