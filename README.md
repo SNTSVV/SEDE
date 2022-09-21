@@ -31,6 +31,8 @@ The package contains the python code implementation of the SEDE approach and the
   * ProblemClass.final_population is assigned with the population stored in the archive. The assignment occurs in “Archive.archive_metrics()”. This is slightly different from DeepJanus where the archive is stored inside BeamNGProblem. 
 * core.archive_impl.py: the SmartArchive() function has been modified to add only individuals that are inside the cluster (F2 <=1); the distance function is replaced by ours (cosine parameters similarity) 
 
+Download the empirical data for RQ1-5 from [here](https://figshare.com/s/a7fd8e713e038ee0d86c)
+
 To run the tool you need to have the case studies setup in a separated directory and then generate HUDD clusters using the command
 
 > python SEDE.py -o ./HPD -SEDE HUDD
