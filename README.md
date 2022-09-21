@@ -22,7 +22,7 @@ SEDE makes use of two versions of IEE-Face-Simulator, v0.5, which is in director
 Both the two versions of the IEE-Face-Simulator are released with GPL v3 licence (see files 'gpl-3.0.txt' in both directories).
 The directory IEEPackage is Copyright (C) 2018-2022 IEE S.A. (https://iee-sensing.com) released with GPL v3 licence.
 
-## USAGE
+## Usage
 
 The package contains the python code implementation of the SEDE approach and the files used to evaluate RQ1-5 (SEDE_RQx.py) along with IEE simulators and DeepJanus adoption of our case studies. We modified the implementation of DeepJanus for their BeamNG case study with the following changes:
 * individual.py: we do not deal with a pair of images but only one image; distance computation is performed directly in the archive class, where we import “doParamDist()” from “searchModule.py” 
@@ -48,7 +48,7 @@ where RQx is the RQ to be evaluated (options are RQ1, RQ2, RQ3, RQ4, RQ5)
 N.B.: for RQ1 you need to have the RQ1 directory shared with the replicability package inside the parent directory of this file
 
 
-## CONTENTS
+## Contents
 
 Download the empirical data for RQ1-5 [here](https://figshare.com/s/a7fd8e713e038ee0d86c)
 
