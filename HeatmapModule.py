@@ -676,6 +676,24 @@ def collectHeatmaps(outPutPath, layerX):
     print("Collected " + str(layerX) + " heatmaps")
     return allHM, imgList
 
+def collectHeatmaps_Dir(HMDir):
+    allHM = {}
+    imgList = []
+    index2 = 0
+    for file in os.listdir(HMDir):
+        if file.endswith(".pt"):
+            imgList.append(file)
+    for file in imgList:
+        if torch.cuda.is_available():
+            heatMap = torch.load(join(HMDir, file))
+            heatMap.cuda()
+        else:
+            heatMap = torch.load(join(HMDir, file), map_location='cpu')
+        allHM[file.split(".")[0]] = heatMap
+        index2 = index2 + 1
+        if index2 % 1000 == 0:
+            print("Heatmap is collected for " + str(index2) + " images")
+    return allHM, imgList
 
 def calcAndSaveHeatmapDistances(layerX, outPutPath: str, outputFile: str, metric):
     start = time.time()
