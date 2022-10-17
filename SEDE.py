@@ -1,5 +1,5 @@
 import config
-from imports import basename, argparse, os, shutil, join, np, exists
+from imports import basename, argparse, os, shutil, join, np, exists, dirname
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='DNN debugger')
@@ -59,6 +59,8 @@ if __name__ == '__main__':
     else:
         print("WARNING: number of Variables in config.nVar is not set")
     import Helper
+    if args.caseStudy == "HPD-H" or args.caseStudy == "HPD-F":
+        args.outputPathX = join(dirname(args.outputPathX), "HPD")
     SEDE = Helper.Helper(outputPath=args.outputPathX, modelName=args.modelName, workersCount=args.workersCount,
                   batchSize=args.batchSize, metric="Euc", clustFlag=args.clustF, assignFlag=args.assignF,
                   retrainFlag=args.retrainF, retrainMode=args.retrainMode, retrainApproach=args.approach,
@@ -128,6 +130,8 @@ if __name__ == '__main__':
         main.runSEDE(SEDE.caseFile, clusters, centroidHM, clusterRadius)
     elif args.SEDEmode == "RQ2":
         import SEDE_RQ2, searchModule, assignModule
+        from imports import torch
+
         SEDE.RCC = "TR" #HPD-H
         #self.RCC = "TR1" #HPD-F
         SEDE.updateCaseFile()
@@ -135,9 +139,14 @@ if __name__ == '__main__':
         print("Loading HM distance file for the selected layer.")
         HMDistFile = join(str(SEDE.caseFile["filesPath"]), str(SEDE.caseFile["selectedLayer"]) + "HMDistance.xlsx")
         clusterRadius, centroidHM, testHM = assignModule.getClusterData(SEDE.caseFile, HMDistFile)
+        layerClust = join(SEDE.caseFile["filesPath"], "ClusterAnalysis_" + str(SEDE.caseFile["clustMode"]),
+                          SEDE.caseFile["selectedLayer"] + ".pt")
+        clsData = torch.load(layerClust, map_location=torch.device('cpu'))
+        clusters = clsData['clusters']
         #clusters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] #HPD-H
-        clusters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #FLD/HPD-F
-        SEDE_RQ2.plotRQ(SEDE.caseFile, centroidHM)
+        #clusters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #FLD/HPD-F
+        SEDE.caseFile["caseStudy"] = args.caseStudy
+        SEDE_RQ2.RQ(centroidHM, SEDE_RQ2.getSEDE_imgs(clusters, SEDE.caseFile), SEDE.caseFile)
     elif args.SEDEmode == "RQ3":
         import SEDE_RQ3, searchModule, assignModule
         SEDE.RCC = "TR" #HPD-H
