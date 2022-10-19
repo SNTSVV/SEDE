@@ -85,3 +85,7 @@ If you use our work, please cite SEDE in your publications. Here is an example B
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 ```
+
+## Acknowledgments:
+
+This project has received funding from IEE Luxembourg, Luxembourg’s National Research Fund (FNR) under grant BRIDGES2020/IS/14711346/FUNTASY, the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 694277), and NSERC of Canada under the Discovery and CRC programs. Authors would like to thank Jun Wang for his contribution to IEE simulators. The experiments presented in this paper were carried out using the HPC facilities of the University of Luxembourg (see http://hpc.uni.lu).
